@@ -10,10 +10,8 @@
     <meta property="og:image" content="https://yunjioh01-netizen.github.io/dreamnote/thumbnail.jpg">
     <meta property="og:url" content="https://www.dreamnote.kr">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://yunjioh01-netizen.github.io/dreamnote/썸네일.jpg">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Nanum+Myeongjo&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Nanum+Myeongjo:wght@400;700&display=swap');
 
         body, html {
             margin: 0; padding: 0;
@@ -23,8 +21,8 @@
         }
 
         section {
-            padding: 80px 20px;
-            max-width: 1000px;
+            padding: 60px 20px;
+            max-width: 900px;
             margin: 0 auto;
             text-align: center;
         }
@@ -65,12 +63,13 @@
         }
         .video-container iframe { width: 100%; height: 100%; border: none; }
 
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px; margin-top: 50px; text-align: left;
+        /* 텍스트 박스 공통 스타일 */
+        .text-content {
+            text-align: left;
+            word-break: keep-all;
+            margin: 40px auto;
+            line-height: 2;
         }
-        .feature-item { padding: 30px; background: #fff; border-left: 4px solid #E1AD01; }
 
         .buy-now { background-color: #333; color: #fff; padding: 100px 20px; }
         .price { font-size: 2rem; margin-bottom: 20px; }
@@ -84,6 +83,7 @@
 
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.5rem; }
+            .hero p { font-size: 1rem; }
             .quote-section p { font-size: 1.1rem; }
         }
     </style>
@@ -96,12 +96,8 @@
     </header>
 
     <section style="padding-bottom: 0;">
-        <div class="image-box" style="margin-bottom: 10px;">
-            <img src="new_photo1.jpg" alt="꿈의 노트 커버">
-        </div>
-        <div class="image-box" style="margin-top: 10px;">
-            <img src="new_photo2.jpeg" alt="꿈의 노트 슬로건">
-        </div>
+        <div class="image-box" style="margin-bottom: 10px;"><img src="new_photo1.jpg" alt="꿈의 노트 커버"></div>
+        <div class="image-box" style="margin-top: 10px;"><img src="new_photo2.jpeg" alt="꿈의 노트 슬로건"></div>
     </section>
 
     <section style="padding-top: 40px; padding-bottom: 80px;">
@@ -111,55 +107,75 @@
     <section class="quote-section">
         <h2>이미 이루어진 기록의 힘</h2>
         <div class="video-container">
-            <iframe 
-                src="https://www.youtube.com/embed/PrxbPkPSLY0" 
-                title="꿈의노트: 꿈이 이루어지는 기록" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen>
-            </iframe>
+            <iframe src="https://www.youtube.com/embed/PrxbPkPSLY0" title="꿈의노트" allowfullscreen></iframe>
         </div>
         <p>"내가 쓰는 한 줄의 기록이, 내 인생을 바꾼다."</p>
     </section>
 
-    <section style="background-color: #fff; padding: 100px 20px; text-align: left; line-height: 2;">
-        <div style="max-width: 800px; margin: 0 auto;">
-            <p style="font-size: 1.1rem; color: #555; word-break: keep-all;">
-                <strong style="font-size: 1.3rem; color: #333;">꿈의 노트는 처음부터 끝까지 <span class="highlight">끌어당김의 법칙</span>의 흐름으로 설계된 노트입니다.</strong><br><br>
-                꿈의 노트는 단순히 "꿈을 적는 노트"가 아닙니다. 철저히 끌어당김의 법칙을 기반으로 하며, <span style="border-bottom: 2px solid #E1AD01;">이미 이루어진 삶을 기준</span>으로 지금의 현실과 앞으로 나아갈 미래의 방향을 맞추도록 설계된 기록 노트입니다. <br><br>
-                막연한 희망이나 계획을 적는 것이 아닙니다. 원하는 삶이 실현된 상태를 전제로 사고방식과 선택의 방향을 바꾸며 현실의 변화를 이끌어내는 데 목적이 있습니다. "글쓰기"를 통해 "이루어진 나"의 기준에 맞게 재정렬함으로써 원하는 현실을 자연스럽게 끌어당길 수 있도록 돕습니다. <br><br>
-                꿈의 노트는 여느 끌어당김 노트와 다릅니다. 100번 쓰기를 요구하지 않습니다. 매일 쓰기도 강요하지 않습니다.
-            </p>
-            
-            <div style="margin-top: 40px; padding: 40px; background-color: #fdfaf3; border-radius: 15px;">
-                <p style="font-weight: bold; margin-bottom: 15px; color: #E1AD01; font-size: 1.2rem;">대신,</p>
-                <ul style="list-style: none; padding-left: 0; font-size: 1.1rem;">
-                    <li style="margin-bottom: 12px;">✔ 내가 원할 때 펼치고</li>
-                    <li style="margin-bottom: 12px;">✔ 내가 원할 때 쓰며</li>
-                    <li style="margin-bottom: 12px;">✔ 이미 이루어진 상태를 기준으로 자연스럽게 기록합니다.</li>
-                </ul>
-                <p style="margin-top: 25px; font-weight: 700; color: #333; font-size: 1.1rem;">그 기록은 생각에서 멈추지 않고, 나를 행동하게 만드는 힘이 됩니다.</p>
-            </div>
+    <section class="text-content" style="max-width: 800px;">
+        <p style="font-size: 1.1rem; color: #444;">
+            <strong style="font-size: 1.3rem; color: #222;">꿈의 노트는 처음부터 끝까지 <span class="highlight">끌어당김의 법칙</span>의 흐름으로 설계된 노트입니다.</strong><br><br>
+            단순히 "꿈을 적는 노트"가 아닙니다. 이미 이루어진 삶을 기준으로 지금의 현실과 앞으로 나아갈 미래의 방향을 맞추도록 설계되었습니다. 원하는 삶이 실현된 상태를 전제로 사고방식과 선택의 방향을 바꾸며 현실의 변화를 이끌어내는 데 목적이 있습니다. <br><br>
+            꿈의 노트는 100번 쓰기나 매일 쓰기를 강요하지 않습니다. 
+        </p>
+        <div style="margin-top: 30px; padding: 30px; background-color: #fdfaf3; border-radius: 15px; border-left: 5px solid #E1AD01;">
+            <p style="font-weight: bold; margin-bottom: 10px; color: #E1AD01;">대신,</p>
+            <ul style="list-style: none; padding-left: 0; font-size: 1.05rem;">
+                <li>✔ 내가 원할 때 펼치고, 내가 원할 때 쓰며</li>
+                <li>✔ 이미 이루어진 상태를 기준으로 자연스럽게 기록합니다.</li>
+            </ul>
         </div>
     </section>
 
     <section>
-        <div class="image-box"><img src="new_photo8.jpg" alt="풍요 속의 모습"></div>
-        <div class="image-box"><img src="new_photo3.jpg" alt="부의 확언 가이드"></div>
-        <div class="image-box"><img src="new_photo4.jpg" alt="사랑과 관계의 확언"></div>
+        <div class="image-box"><img src="new_photo6.jpg" alt="작성 페이지"></div>
+        <div class="text-content" style="text-align: center; border-top: 1px solid #eee; padding-top: 40px;">
+            <p style="font-size: 1.15rem; font-family: 'Nanum Myeongjo', serif; line-height: 2.2;">
+                꿈의 노트는 우리가 살면서 가장 끌어당기고 싶은 주제들인<br>
+                <span style="background: linear-gradient(to top, #fff3cd 40%, transparent 40%); font-weight: bold;">부, 사랑, 자존감, 건강, 꿈</span> 등을 각 테마별로 구성하여<br>
+                세부적인 나의 꿈들은 막연한 바람이 아닌<br>
+                <strong>명확한 미래의 장면으로 꺼내어 기록하게 도와줍니다.</strong>
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="image-box"><img src="new_photo3.jpg" alt="부의 확언"></div>
+        <div class="image-box"><img src="new_photo4.jpg" alt="사랑의 확언"></div>
         <div class="image-box"><img src="new_photo5.jpg" alt="건강의 확언"></div>
-        <div class="image-box"><img src="new_photo6.jpg" alt="직접 작성하는 페이지"></div>
-        <div class="image-box"><img src="new_photo7.jpg" alt="감사 메시지 페이지"></div>
+    </section>
+
+    <section style="background-color: #fafafa;">
+        <div class="text-content" style="max-width: 750px; text-align: center;">
+            <p style="font-size: 1.1rem; color: #555;">
+                각 페이지마다 <span class="highlight" style="font-weight: bold;">끌어당김을 200% 활용할 수 있는 가이드라인</span>,<br>
+                뚜렷한 시각화를 위한 길잡이 예시— <br>
+                그리고 믿음을 강화시키는 긍정확언들과 명언들로 구성되어 있어<br><br>
+                글쓰기가 막연할 때조차 내가 원하는 현실과<br>
+                <strong>미래의 방향을 명확하게 그려낼 수 있도록 이끌어 줍니다.</strong>
+            </p>
+        </div>
     </section>
 
     <section>
         <div class="image-box"><img src="new_photo9.jpg" alt="인생의 항로"></div>
-        <div class="image-box"><img src="new_photo10.jpg" alt="로저 배니스터 이야기"></div>
-        
-        <h2>이런 분께 필요해요</h2>
-        <div class="features">
-            <div class="feature-item">열심히 살았는데, 방향이 흐릿해진 분</div>
-            <div class="feature-item">긍정은 알지만, 현실이 안 따라와서 지친 분</div>
-            <div class="feature-item">이제는 진짜 나답게 잘 되고 싶은 분</div>
+        <div class="image-box"><img src="new_photo7.jpg" alt="감사 메시지"></div>
+        <div class="image-box"><img src="new_photo8.jpg" alt="풍요의 확언"></div>
+    </section>
+
+    <section style="padding-bottom: 120px;">
+        <div class="text-content" style="text-align: center; margin-bottom: 60px;">
+            <h2 style="font-size: 1.6rem; color: #222; line-height: 1.6;">
+                꿈의 노트— <br>
+                더 이상 막연한 미래를 꿈꾸는 내가 아닌<br>
+                <span class="highlight">내가 원하는 삶을 이미 이룬 나</span>로 살아갈 시간입니다.
+            </h2>
+            <p style="font-size: 1.2rem; margin-top: 20px; font-weight: bold;">여러분의 꿈을 응원합니다!</p>
+        </div>
+
+        <div style="text-align: left; background-color: #f9f9f9; padding: 30px; border-radius: 10px; font-size: 0.9rem; color: #666; line-height: 1.8;">
+            <p style="margin: 0 0 15px 0;">※ 꿈의노트는 "기록하는 노트"를 넘어 한 권의 삶의 이야기를 써 내려가는 "책"같은 느낌을 담고자, <strong>무선제본 방식</strong>을 선택했습니다. 사용을 마친 후에도 "나만의 기록물"로 책장에 보관할 수 있습니다.</p>
+            <p style="margin: 0;">※ 무선제본의 특성상 펼침이 완전 평평하지 않을 수 있으나, 사용을 거듭할수록 페이지의 결이 잡히며 노트 전체의 흐름이 자연스럽게 안정됩니다. 참고 부탁드립니다.</p>
         </div>
     </section>
 
